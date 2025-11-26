@@ -8,16 +8,16 @@
 </head>
 <body>
     <header>
-        <h1>Sacola De Compras</h1>
+        <h1>Sacola de Compras</h1>
     </header>
-
     <aside>
         <nav>
+            <a href="/Configuracoes.html"><img src="/Imagens/Menu.png" alt="Configurações" class="Icon1"></a>
             <a href="Home.html"><img src="/Imagens/png.logo.png" alt="logo Livraria" class="Logo"></a>
             <ul>
                 <a href="busca.html"><img src="/Imagens/estantePng.png" alt="Estante Virtual" class="Icon1"></a>
-                <a href="Carrinho.html"><img src="/Imagens/sacola.png" alt="Sacola de Compras" class="Icon1"></a>
-                <a href="Historico.html">Histórico</a>
+                <a href="Carrinho.html"><img src="/Imagens/sacola.png" alt="SAcola de Comparas" class="Icon1"></a>
+                <a href="Historico.html">Historico</a>
                 <a href="Lista.html"><img src="/Imagens/ListaIcon.webp" alt="Lista de desejos" class="Icon1"></a> 
             </ul>
         </nav>
@@ -27,51 +27,64 @@
         <h2>Sacola de Compras</h2>
 
         <div class="carrinho">
-
-            <!-- PRODUTO 1 -->
+             <div class="all-selection">
+                Selecionar tudo <input type="radio" name="selecionar-produto">
+                </div> <!-- PRODUTO 1 -->
             <div class="card-produto">
-                <input type="radio" name="selecionar-produto">
-                <img class="imgLi" src="/Imagens/365StoryPrD.jpg" alt="365 histórias para dormir princesas">
-
+               
+                <div>
+                    <a href="/Livro.html"><img class="imgLi" src="/Imagens/365StoryPrD.jpg" alt="365 histórias para dormir princesas"></a>
+                </div>
                 <div class="info-produto">
                     <h3 class="Titulo01">365 Histórias para Dormir - Princesas</h3>
                     <ul class="detalhes">
-                        <li><a href="/Editora.html">Editora: Ciranda Cultural</a></li>
-                        <li><a href="/Autor.html">Autor: Disney</a></li>
-                        <li><a href="/Genero.html">Gênero: Infantil</a></li>
+                        <li class="info"><a href="/Editora.html">Ciranda Cultural</a></li>
+                        <li class="info"><a href="/Autor.html">Disney</a></li>
+                        <li class="info"><a href="/Genero.html">Infantil</a></li>
                     </ul>
                     <p>Um livro encantador com 365 histórias mágicas para sonhar com princesas.</p>
                     <p><strong>Preço:</strong> R$ 79,90</p>
                     <div class="acoes">
-                        <input type="button" value="Comprar">
-                        <input type="checkbox" title="Adicionar à lista de desejos">
+                        <div class="compra">
+                            <a href="/Finalizar.html" class="botao">Comprar</a>
+                        </div>
+                        <input type="checkbox" title="Adicionar à lista de desejos" id="wishlist">
+                        <label for="wishlist">Adicionar à Lista de Desejos</label>
+            </div>
+                </div>
+            </div>
+            <br>
+
+            <!-- Produto 2 -->
+             <div class="card-produto">
+               
+                 <div>
+                    <a href="/Livro.html"><img class="imgLi" src="/Imagens/365StoryPrD.jpg" alt="365 histórias para dormir princesas"></a>
+                </div>
+                <div class="info-produto">
+                    <h3 class="Titulo01">365 Histórias para Dormir - Princesas</h3>
+                    <ul class="detalhes">
+                        <li class="info"><a href="/Editora.html">Ciranda Cultural</a></li>
+                        <li class="info"><a href="/Autor.html">Disney</a></li>
+                        <li class="info"><a href="/Genero.html">Infantil</a></li>
+                    </ul>
+                    <p>Um livro encantador com 365 histórias mágicas para sonhar com princesas.</p>
+                    <p><strong>Preço:</strong> R$ 79,90</p>
+                    <div class="acoes">
+                        <div class="compra">
+                            <a href="/Finalizar.html" class="botao">Comprar</a>
+                        </div>
+                         <input type="checkbox" title="Adicionar à lista de desejos" id="wishlist">
+                        <label for="wishlist">Adicionar à Lista de Desejos</label>
                     </div>
                 </div>
             </div>
 
-            <!-- Produto 2 -->
-            <div class="card-produto">
-                <div>  
-                   <img class="imgLi" src="/Imagens/365StoryPrD.jpg" alt="365 histórias para dormir princesas">
-                </div>
-                
-                <h3 class="Titulo01">365 Histórias para Dormir - Princesas</h3>
-                <p class="detalhes"></p>                  
-                    <p>Um livro encantador com 365 histórias mágicas para sonhar com princesas.</p>
-                    <p><strong>Preço:</strong> R$ 79,90</p>
-                    <div class="acoes">
-                        <input type="checkbox" title="Adicionar à lista de desejos">Lista de Desejos</input>
-                    </div>
-                    <div>
-                        <input type="button" value="Comprar">
-
-                    </div>    
-                       
-                       
-                    </div>
-                </div>
-
         </div>
     </main>
+    <hr>
+     <footer>
+        <p>© 2025 Livraria Mágica. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
